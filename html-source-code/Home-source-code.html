@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ACLEDA Navbar</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css-source-code/Home.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Battambang:wght@300;400;700&family=Koulen&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+
+    
+    <div class="nav-logo">
+      <img src="https://www.acledabank.com.kh/kh/assets/layout/logo3.png" alt="ACLEDA Logo">
+    </div>
+
+   
+    <div class="nav-menu">
+
+      <a href="#" class="nav-link">
+        <i class='bx bxs-offer'></i> Special Offers
+      </a>
+
+      <div class="nav-item">
+        <a href="#" class="nav-link">
+          About ACLEDA <i class='bx bx-chevron-down'></i>
+        </a>
+        <div class="dropdown">
+          <a href="#">Financial Information</a>
+          <a href="#">Bank Profile</a>
+          <a href="#">Media</a>
+          <a href="#">Career</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-link">
+        <i class='bx bx-search'></i> Search
+      </a>
+
+      <div class="nav-item">
+        <a href="#" class="nav-link highlight">
+          Internet Banking <i class='bx bx-chevron-down'></i>
+        </a>
+        <div class="dropdown">
+          <a href="#">Retail Banking</a>
+          <a href="#">Corporate Banking</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+   <nav class="main-nav">
+    <div class="main-menu">
+      <div class="nav-item">
+        <a href="#">PERSONAL ▾</a>
+        <div class="dropdown">
+        <a href="#">Accounts</a>
+        <a href="#">Loans</a>
+        <a href="#">Deposits</a>
+        <a href="#">Cards</a>
+        <a href="#">Digital Banking</a>
+      </div>
+    </div>
+      <div class="nav-item">
+        <a href="#">BUSINESS ▾</a>
+        <div class="dropdown">
+        <a href="#">Business Accounts</a>
+        <a href="#">Financing</a>
+        <a href="#">Trade Services</a>
+        <a href="#">Payroll</a>
+      </div>
+    </div>
+      <div class="nav-item">
+        <a href="#">CARDS ▾</a>
+        <div class="dropdown">
+        <a href="#">Debit Cards</a>
+        <a href="#">Credit Cards</a>
+        <a href="#">Prepaid Cards</a>
+      </div>
+    </div>
+      <div class="nav-item">
+        <a href="#">DIGITAL ▾</a>
+        <div class="dropdown">
+        <a href="#">Debit Cards</a>
+        <a href="#">Credit Cards</a>
+        <a href="#">Prepaid Cards</a>
+      </div>
+    </div>
+      <a href="#">INVESTOR RELATIONS</a>
+    </div>
+
+    <div class="exchange">
+      <span>EXCHANGE</span>
+      <img src="data:image/png;base64,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">
+      <span>USD</span>
+      <span class="rate">4,022</span>
+      <span class="rate">4,038</span>
+    </div>
+  </nav>
+</header>
+<section class="container">
+  <div class="slider-wrapper">
+    <div class="slider">
+      <img  id="slider" src="https://www.acledabank.com.kh/kh/assets/image/banner-digitalbankloan-eng.jpg" alt="s-1">
+      <img  id="slide2" src="https://www.acledabank.com.kh/kh/assets/image/banner-bnpl.jpg" alt="s-2">
+      <img  id="slide3" src="https://www.acledabank.com.kh/kh/assets/image/banner-salary-loan.jpg" alt="s-3">
+      <img  id="slide4" src="https://www.acledabank.com.kh/kh/assets/image/banner-advance-salary.jpg" alt="s-4">
+      <img  id="slide5" src="https://www.acledabank.com.kh/kh/assets/image/banner-cross-border-japan-eng.jpg" alt="s-5">
+    </div>
+    <div class="silder-nav">
+      <a href="#slide1"></a>
+      <a href="#slide2"></a>
+      <a href="#slide3"></a>
+      <a href="#slide4"></a>
+      <a href="#slide5"></a>
+    </div>
+  </div>
+
+  <div class="menu-container">
+   <div class="menu-item">
+      <div class="icon-box">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <p>Contact Us</p>
+    </div>
+   <div class="menu-item">
+      <div class="icon-box">
+        <i class="fa-solid fa-store"></i>
+      </div>
+      <p>Tornchet Pays</p>
+    </div>
+   <div class="menu-item">
+      <div class="icon-box">
+        <i class="fa-solid fa-braille"></i>
+      </div>
+      <p>Trade Portal</p>
+    </div>
+   <div class="menu-item">
+      <div class="icon-box">
+        <i class="fa-solid fa-bullhorn"></i>
+      </div>
+      <p>Latest News</p>
+    </div>
+   <div class="menu-item">
+      <div class="icon-box">
+        <i class="fa-solid fa-percent"></i>
+      </div>
+      <p>Special offers</p>
+    </div>
+   <div class="menu-item">
+      <div class="icon-box">
+         <i class="fa-solid fa-clock-rotate-left"></i>
+      </div>
+      <p>Product Update</p>
+    </div>
+   <div class="menu-item">
+      <div class="icon-box">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+      </div>
+      <p>Credit</p>
+    </div>
+   <div class="menu-item">
+      <div class="icon-box">
+        <i class="fa-solid fa-vault"></i>
+      </div>
+      <p>Deposites</p>
+    </div>
+   
+  </div>
+
+  <div class="new-section">
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/img-ln20260507-small.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>ACLEDA Bank signs Memorandum of Understanding with Telecom Cambodia </p>
+      </div>
+    </div>
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/img-ln20260401-1.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>ACLEDA Bank Plc. and Mastercard Collaborate to Enhance Cross-Border Payments via Mastercard Move</p>
+      </div>
+    </div>
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/img-ln20260330-5.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>Official Launch of Cross-Border QR code Payment between Cambodia and Singapore</p>
+      </div>
+    </div>
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/img-ln20260320-1.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>Celebrating the 46th Anniversary of the Reintroduction of the Khmer Riel</p>
+      </div>
+    </div>
+    <div class="show-card">
+      <h1>OUR NEWS</h1>
+      <button>
+        SHOW ALL →
+      </button>
+    </div>
+    
+  </div>
+  <div class="new-section">
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/promotion/master-6-p.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>Enjoy exclusive USD6 cashback</p>
+      </div>
+    </div>
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/nssf3.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>ACLEDA Bank Plc. and Mastercard Collaborate to Enhance Cross-Border Payments via Mastercard Move</p>
+      </div>
+    </div>
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/img-cam-ie-3.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>Official Launch of Cross-Border QR code Payment between Cambodia and Singapore</p>
+      </div>
+    </div>
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/tvet.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>Celebrating the 46th Anniversary of the Reintroduction of the Khmer Riel</p>
+      </div>
+    </div>
+    <div class="show-card">
+      <h1>OUR NEWS</h1>
+      <button>
+        SHOW ALL →
+      </button>
+    </div>
+    
+  </div>
+  <div class="new-section">
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/voice-alert-in-out.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>ACLEDA Super App now can alert voice of incoming and outgoing transaction amounts.</p>
+      </div>
+    </div>
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/dg-simcard.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>Verify your SIM/eSIM ownership easily and securely through ACLEDA Super App, just a few simple steps.</p>
+      </div>
+    </div>
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/inva-real.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>More convenient and secure, you can now pay for property rental with INVA Real Estate Investment and Valuation Co., Ltd.</p>
+      </div>
+    </div>
+    <div class="card-wrapper">
+      <div class="news-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/GDCE.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <p>ACLEDA Bank is proud to support Cambodia's digital transformation through the collaboration with the Ministry.</p>
+      </div>
+    </div>
+    <div class="show-card">
+      <h1>OUR NEWS</h1>
+      <button>
+        SHOW ALL →
+      </button>
+    </div>
+    
+  </div>
+</section>
+
+<section class="promo-section">
+    <div class="promo-wrapper">
+      <div class="promo-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/banner/promotion/ps_ebbnpl1-eng.jpg" alt="">
+      </div>
+      <div class="readmore">
+        <a href="#">READ MORE→</a>
+      </div>
+    </div>
+  
+    <div class="promo-wrapper">
+      <div class="promo-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/banner/promotion/ps_proxtera1-eng.jpg" alt="">
+      </div>
+      <div class="readmore">
+        <a href="#">READ MORE→</a>
+      </div>
+    </div>
+  
+    <div class="promo-wrapper">
+      <div class="promo-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/banner/promotion/cu_toanchetpartner_s1-eng=565.jpg" alt="">
+      </div>
+      <div class="readmore">
+        <a href="#">READ MORE→</a>
+      </div>
+    </div>
+              
+    <div class="promo-wrapper">
+      <div class="promo-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/banner/promotion/info-business-hour1-eng.jpg" alt="">
+      </div>
+      <div class="readmore">
+        <a href="#">READ MORE→</a>
+      </div>
+    </div>
+  
+    <div class="promo-wrapper">
+      <div class="promo-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/banner/promotion/ps_ftintltransfer_swift1-eng.jpg" alt="">
+      </div>
+      <div class="readmore">
+        <a href="#">READ MORE→</a>
+      </div>
+    </div>
+  
+    <div class="promo-wrapper">
+      <div class="promo-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/banner/promotion/frm_mobile1-eng.jpg" alt="">
+      </div>
+      <div class="readmore">
+        <a href="#">READ MORE→</a>
+      </div>
+    </div>
+</section>
+<section class="partner-section">
+ 
+    <div class="partner-wrapper">
+        <h1>PUBLIC SECTOR PARTNERS</h1>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-accounting-auditing.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-angkor-enterprise.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-e-arrival.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-hospital-kossamak.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cambodiatrade.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-citybus.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-council-development-cam.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-informal-economy.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-e-services-business.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-evisa.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-EAC.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-customs.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-agriculture.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-agriculture.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-civil-service.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-commerce.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-economy.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-mfaic.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-innovation.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-interior.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-justice.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-labour.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-land.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-telecommunications.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-public-works.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-of-tourism.jpg" alt="">
+        </div>
+        <div class="partner-card">
+          <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ministry-water-and-meteorology.jpg" alt="">
+        </div>
+        
+    </div>
+</section>
+<section class="local-partner">
+    <div class="local-wrapper">
+      <h1>LOCAL PARTNERS</h1>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-7-eleven.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-abundant-life.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-active-people.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-aeon.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-AIA.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-AION-cambodia.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-airavata.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-toyota-cambodia.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-american-pacific.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-angkor-dc.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-hospital-angkor-children.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-angkor-tep.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-asia-euro.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-banhji.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-beltei.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-bill24.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-bonjour.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-brilliance.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-brown-coffee.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-burger-boi.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-byd.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-CP-Cambodia.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-angkor-air.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cambodia-securities.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cwea.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cjcc.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-takaful.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo_ccb.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-kantha-bopha.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cambodia-securities.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cwea.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cjcc.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-takaful.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo_ccb.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cambolink21.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-camis.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-capitol.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cb-insurance.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cellcard.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-CG-EVenergy.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-chief-bank.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-CIA-first.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-clean24.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-online.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cootel.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo_cbc.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-dai-ichi.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-decathlon.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ffc.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-grab.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-online.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-cootel.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-e-gets.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-e-money.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-gdt.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-e-gets.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ffc.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo_forte.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-kampuchea-tela.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-L192.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-passapp.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-RUPP.jpg" alt="">
+      </div>
+      <div class="local-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/image/logo-sastra-film.jpg" alt="">
+      </div>
+      
+      
+    </div>
+</section>
+<section class="international-partner">
+  <div class="international-wrapper">
+    <h1>INTERNATIONAL PARTNERS</h1>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-Laos-APB.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-Alipay.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/card-american-express.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-BVBank.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-bangkok-bank.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-bidv.png" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-bank-of-ayudhya.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-Laos-BFL.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-Laos-BCEL.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ccb-international.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/card-dc.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-swift.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/card-discover.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-dragonpass.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-duitnow.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-e9pay.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-GLN.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-googlepay.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-gmoney.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-Laos-Indochina-Bank.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-JPQR.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/card-jcb.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-Laos-JDB.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-vietcombank.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-kasikorn-bank.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-hana.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo_krungthai.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-lapnet.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-liquid.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/card-unionpay.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/card-mastercard.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-vietqr.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-MB-bank-laos.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-promptpay.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo_moneygram.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-national-citizen-bank.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/card-visa.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-netstars.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-priority-pass.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-WeChat-Pay.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-ria-money-transfer.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-vietqr.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-queenbee.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-tranglo.jpg" alt="">
+    </div>
+    <div class="internaltion-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/logo-national-citizen-bank.jpg" alt="">
+    </div>
+  </div>
+</section>
+<section class="Abroad-Acelyda">
+  <div class="Universal-Acelyda">
+    <div class="Abroad-wrapper">
+      <div class="bank-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/layout/logo-aub.png" alt="">
+      </div>
+      <div class="bank-text">
+        <p><span>ACLEDA University of Business Co., Ltd.</span>, a wholly-owned subsidiary of ACLEDA Bank Plc., is to be the leading business school with the highest quality standard to develop future generations to support the socio-economic development in Cambodia and the Region.</p>
+      </div>
+    </div>
+    <div class="Abroad-wrapper">
+      <div class="bank-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/layout/logo-abl.png" alt="">
+      </div>
+      <div class="bank-text">
+        <p><span>ACLEDA Bank Lao Ltd.</span> is one of ACLEDA Bank Plc.'s subsidiaries and providing superior financial services in the Lao PDR (37 branches).</p>
+      </div>
+    </div>
+    <div class="Abroad-wrapper">
+      <div class="bank-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/layout/logo-acs.png" alt="">
+      </div>
+      <div class="bank-text">
+        <p><span>ACLEDA Securities Plc.</span> is a wholly-owned subsidiary of ACLEDA Bank Plc. and providing services as a Securities Brokerage, Securities Selling Agent, Bondholders Representative and Fund Distributor to individual and institutional customers, investors and the public.</p>
+      </div>
+    </div>
+    <div class="Abroad-wrapper">
+      <div class="bank-card">
+        <img src="https://www.acledabank.com.kh/kh/assets/layout/logo-amm.png" alt="">
+      </div>
+      <div class="bank-text">
+        <p><span>ACLEDA MFI Myanmar Co.</span>, Ltd. is one of ACLEDA Bank Plc.'s subsidiaries and operating as a microfinance institution in the Republic of the Union of Myanmar (17 branches).</p>
+      </div>
+    </div>
+  </div>  
+</section>
+<footer class="footer">
+  <div class="footer-menu">
+    <a href="">SITE MAPS</a>
+    <a href="">FORM CENTER</a>
+    <a href="">USER MANUAL</a>
+    <a href="">SECURITY TIPS</a>
+    <a href="">NEWSLETTER</a>
+    <a href="">LEGAL AND PRIVACY NOTICE</a>
+  </div>
+  <div class="footer-information">
+    <p>ONLINE VISITOR:418</p>
+    <p>©2026 ACLEDA Bank Plc</p>
+    
+  </div>
+  <div class="footer-credential">
+    <h3>ACLEDA Bank Plc. - Credentials</h3>
+    
+  </div>
+  <div class="credential-img-wrapper">
+    <div class="credential-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/PCIDSS.jpg" alt="">
+    </div>
+    <div class="credential-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/IRQS.jpg" alt="">
+    </div>
+    <div class="credential-card">
+      <img src="https://www.acledabank.com.kh/kh/assets/image/IRQS-2.jpg" alt="">
+    </div>
+  </div>
+  <div class="social-contact">
+    <h3>CONNECT WITH US ON</h3>
+  </div>
+  <div class="social-icon-wrapper">
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-coolapp.jpg" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-snapkyu.jpg" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-facebook.png" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-messenger.jpg" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-telegram.png" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-tiktok.png" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon_youtube.svg" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon_instagram.svg" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-linkedin.png" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-threads.png" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-wechat.jpg" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-whatsapp.jpg" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon_line.svg" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-viber.jpg" alt="">
+  </a>
+
+  <a href="">
+    <img src="https://www.acledabank.com.kh/kh/assets/layout/icon-x.jpg" alt="">
+  </a>
+
+</div>
+</footer>
+</body>
+</html>
